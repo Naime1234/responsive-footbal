@@ -3,171 +3,297 @@
 body{
     font-family: 'Poppins', sans-serif;
     /* background-color:#2D25A0 */
-    background: lightcyan;
+    background: rgb(255, 255, 255);
     
 }
-.farst-part{
-    display: flex;
-    background-color:
-    #2D25A0
-    
-    
-     
+
+
+.section-color{
+    background-color: rgb(255, 255, 255)
 }
-section{
-    display: flex;
-    
+
+/* -------------------part-one-------------------------- 
+------------------------------------------------------/*/
+
+
+
+/* ---------------google-font---------------
+---------------------------------------------
+--------------------------------------------- */
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* ----------------body-tags----------------------
+---------------------------------------------------
+-------------------------------------------------- */
+
+body{
+    font-family: 'Poppins', sans-serif;
 }
-.img-container{
+
+/* ---------------img-section1-------------
+------------------------------------------- */
+
+.copa-america img{
+    display: inline-block;
+    width: 45%;
+    height: auto;
+    margin-left: 52%;     
+    margin-top: -30%;
+}
+
+     /* --------------farst-heding------------
+     --------------------------------------- */
+
+
+#farst-heding{
     width: 50%;
-    padding-left: 40%;
-    position: absolute;
-    top: 110px;
-    left: 80px;
-    
-    
-}
-.img-container img{
-    width: 85%;
-   
-      
-}
-
-
-h1{
+    height: auto;
     font-weight: bold;
-    padding-left: 20%;
-    margin-top: 25%;
-font-size: 60px;
-line-height: 80px;
+    padding-left: 1%;
+    
+font-size: 55px;
+line-height: 69px;
 color:
 #ffffff;
+    
+}
+/* ---------------frast-section-backgrund--------------------
+------------------------------------------------------------- */
+.section-backgrund{
+    display: inline-block;
+    background-color: rgba(0, 0, 255, 0.925);
+    width: 100%;
+    height:auto;
+}
+
+.section-backgrund h1{
+    margin-left: 100px;
+     padding-top: 20%;
+}
+
+
+
+
+/* //////////chekbar/////////////// */
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+ 
+}
+
+.title {
+	font-family: "Montserrat";
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* height: 100vh; */
+    height: auto;
+	letter-spacing: 1px;
+}
+
+h1 {
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 80px;
+	line-height: .95;
+	margin: 10px 50px;
+}
+/* styling my button */
+
+.white-mode {
+	text-decoration: none;
+	padding: 20px 20px;
+	background-color: #122;
+	border-radius: 30px;
+	color: #FFF;
+	transition: .35s ease-in-out;
+	position: absolute;
+	left: 105px;
+	bottom: 40px;
+	font-family: "Montserrat";
+}
+
+.white-mode:hover {
+	background-color: rgb(217, 255, 0);
+	color: #122;
+}
+
+
+
+
+.container img{
+    width: 100%;
+    height: auto;
 }
  
- .Ancur-tag{
+
+
+.grid{
+    margin: 80px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  grid-gap: 30px;
+  align-items: center;
+}
+.grid > article{
+    background: #eee5e9;
+    border: none;
+    margin-left: 25px;
+    margin-right: 25%;
+    box-shadow: 2px 10px 8px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform .5s;
+    
+}
+.grid > article :hover{
+    /* transform: translateY(5px); */
+    box-shadow:  4px 4px 8px rgba(0,0,0,0.3);
+}
+..grid > article img{
+    width: 100%;
+    border-top-left-radius: 20px  ;
+    border-top-right-radius:20px ;
+}
+.text{
+    padding: 0 20px 20px ;
+}
+.text h3{
+  text-transform: uppercase;
+}
+@media (max-width: 760px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:500px){
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+   .grid > article{
+       text-align: center;
+       
+   }
+}
+#about-tag{
+     
+    
+    width: 50%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding-left: 6%;
+    /* margin-top: 25%; */
+    text-align: left;
+font-size: 22px;
+}
+.pargraph{
+   width: 40%;
+    /* width: 70%; */
+  margin-left: 10% ; 
+    color: #ffffff;
+    height: 15%;
+    padding-top: 10px;
+}
+.part-three{
+  background-image: url("images/backgrund.png");
+}
+
+
+.img-size img{
+    width: 42%;
+    height: auto;
+    margin-left: 55%;
+    
+    margin-top: -480%;
+     
+
+}
+
+/*--------------- ancur-tag-style------------------- 
+----------------------------------------------------*/
+
+.example_a {
+	color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #ed3330;
+	padding: 18px;
+	border-radius: 5px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+}
+
+ /*-----------------ancur-tag-hover----------------
+ ----------------------------------------- ---------*/
+
+ .example_a:hover {
+	background: #434343;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+}
+.button_cont a{
+  margin-left: 10% ; 
+
+}
+
+
+.futter-img img{
+    width: 30%;
+    display: block;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+.futter-section {
+    background-color: #ffffff;
+}
+
+ 
+
+span{
+    text-align: center;
+    
+}
+span p{
+    margin-bottom: 10%;
+     
+}
+#main{
+    width: 1070px;
+    height:50px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-    height: 0%;
-    background: rgb(58, 56, 56);
+
     
   }
-  a {
-    text-decoration: none;
-    border: 5px solid rgb(255, 0, 85);
-    color: transparent;
-    padding: 19px 1px;
-    font-size: 2px;
-    font-family: sans-serif;
-    letter-spacing: 5px;
-    transition: all 0.5s;
-    position: relative;
+  
+  #main div {
+    width: 50px;
+    height: 1px;
   }
-  a:before {
-    content: "Get Free";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(255, 255, 255);
-    background: rgb(255, 0, 157);
-    font-size: 20px;
-    top: 0;
-    left: 100%;
-    font-family: sans-serif;
-    letter-spacing: 5px;
-    transition: all 1s;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    transform: scale(0) rotatey(0);
-    opacity: 0;
-  }
-  a:hover:before {
-    transform: scale(1) rotatey(360deg);
-    left: 0;
-    opacity: 1;
-  }
-  a:after {
-    content: "Watch Live ⇢";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: yellow;
-    background: rgb(34, 34, 34);
-    font-size: 28px;
-    top: 0;
-    left: 0;
-    font-family: sans-serif;
-    letter-spacing: 5px;
-    transition: all 1s;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    transform: scale(1) rotatey(0);
-    opacity: 1;
-     
-  }
-  a:hover:after {
-    transform: scale(0) rotatey(360deg);
-    left: -100%;
-    opacity: 0;
-     
-  }
-  .container img{
-      width: 100%;
-      height: auto;
-  }
-  .container{
-      
+  #main img{
+    width: 50%;
+    top: 30%;
+    margin: 10px 100px 100px 100px;
   }
 
 
-  .grid{
-      margin: 80px;
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-    grid-gap: 30px;
-    align-items: center;
-  }
-  .grid > article{
-      background: #eee5e9;
-      border: none;
-      margin-left: 25px;
-      margin-right: 25%;
-      box-shadow: 2px 10px 8px rgba(0,0,0,0.3);
-      border-radius: 20px;
-      text-align: center;
-      width: 250px;
-      transition: transform .5s;
-      
-  }
-  .grid > article :hover{
-      /* transform: translateY(5px); */
-      box-shadow:  4px 4px 8px rgba(0,0,0,0.3);
-  }
-  ..grid > article img{
-      width: 100%;
-      border-top-left-radius: 20px  ;
-      border-top-right-radius:20px ;
-  }
-  .text{
-      padding: 0 20px 20px ;
-  }
-  .text h3{
-    text-transform: uppercase;
-  }
-  @media (max-width: 760px){
-      .grid{
-          grid-template-columns: repeat(2,1fr);
-      }
-  }
-  @media (max-width:500px){
-      .grid{
-          grid-template-columns: repeat(1,1fr);
-      }
-     .grid > article{
-         text-align: center;
-         
-     }
-  }
